@@ -1,0 +1,26 @@
+﻿<Window x:Class="PZ_10_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PZ_10_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="378" Width="398">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC7BDBD"/>
+                <GradientStop Color="#FFB9A961" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="Taskdone" HorizontalAlignment="Left" Height="197" Margin="227,101,0,0" VerticalAlignment="Top" Width="128" FontSize="16"/>
+        <ListBox x:Name="task" HorizontalAlignment="Left" Height="197" Margin="28,101,0,0" VerticalAlignment="Top" Width="138" MouseDoubleClick="task_MouseDoubleClick" FontSize="16"/>
+        <TextBox x:Name="Text" HorizontalAlignment="Left" Margin="28,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="16"/>
+        <Button x:Name="But1" Content="Добавить задачу" HorizontalAlignment="Left" Margin="174,17,0,0" VerticalAlignment="Top" Width="138" FontSize="16" Click="But1_Click"/>
+        <Button Content="Удалить задачу?" HorizontalAlignment="Left" Margin="122,339,0,0" VerticalAlignment="Top" FontSize="16" Height="25" Width="128" Click="Button_Click"/>
+        <Label Content="Задания " HorizontalAlignment="Left" Margin="60,70,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Выполненые задания" HorizontalAlignment="Left" Margin="208,70,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Удалить запись в выполненом списке заданий" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>
